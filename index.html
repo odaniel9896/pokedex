@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P">
+    </head>
+    <body id="forest">
+        <div class="caixaTotal">
+            <div class="tituloPokedex">
+                <img src="imagens/title-pokedex.png" alt="ImagemTitulo">
+            </div>
+        </div>
+        
+        <div id="pokedex">
+            <div class="sensor">
+                <button id="butaoRgb"></button>
+           
+            </div>
+            <div class="camera-display">
+
+                <img id="imagemPokemon" src = "imagens/pokebola.gif">
+            </div>
+            <div class="divider"></div>
+            <div class="stats-display">
+                <h2> Pokemon </h2>
+                    <input type="text" id="nomePokemon" readonly="readonly">
+                <h2>#ID</h2>
+                    <input type="text" id="idPokemon" readonly="readonly">
+                <h2>Tipos</h2>
+                <input type="text" id="tipoPokemon" readonly="readonly">
+
+
+                <h3>Habilidade</h3>
+                <ul>
+                    <li>
+                        <input type="text" id="habilidade" readonly="readonly">
+                    </li>
+                </ul>
+                <h3>Moves</h3>
+                <ul>
+                    <li>
+                        <input type="text" id="moves1" readonly="readonly">
+                    </li>
+                    <li>
+                        <input type="text" id="moves2" readonly="readonly">
+                    </li>
+                    <li>
+                        <input type="text" id="moves3" readonly="readonly">
+                    </li>
+                    <li>
+                        <input type="text" id="moves4" readonly="readonly">
+                    </li>
+                
+                </ul>
+            </div>
+            <div class="botom-actions">
+            <div id="actions">
+                <button class="a" id="butaoShiny"> </button>
+            </div>
+            <div id="cross">
+                <button class="cross-button up"></button>
+                <button class="cross-button right" id="avanca-id"></button>
+                <button class="cross-button down"></button>
+                <button class="cross-button left" id="retroceder-id"></button>
+                <div class="cross-button center"> </div>
+            </div>
+            </div>
+            <div class="textoInput"><input type="text" id="textoInput" placeholder="Digite o nome ou a #ID"/></div>
+            
+
+        <!-- partes do botao -->
+        
+            <div class="bottom-modes">
+            
+                <button class="level-button" id="button-pesquisar">Buscar</button>
+                <button class="level-button" id="sounds">Cries</button>
+                <button class="level-button"></button>
+                <button class="level-button"></button>
+            
+                <button class="pokedex-mode black-button">Pokedex</button>
+                <button class="game-mode black-button">Jogo</button>
+            
+            </div>
+        
+        </div>
+        <script src="pokedex.js"></script>
+        
+    </body>
+</html>
